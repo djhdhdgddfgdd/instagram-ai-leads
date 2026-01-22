@@ -93,7 +93,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "https://jsonplaceholder.typicode.com/posts",
+        "url":  "https://webhook.site/6b880026-c28f-4983-b465-c6a84963e1a7",
         "sendBody": true,
         "bodyParameters": {
           "parameters": [
