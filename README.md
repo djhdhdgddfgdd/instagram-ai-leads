@@ -77,11 +77,16 @@ These services **can be replaced in production** with:
 ## Testing the Workflow
 
 Example request using `curl`:
+##cmd comand:
 
 curl -X POST http://localhost:5678/webhook-test/ig-leads-secure ^
   -H "Content-Type: application/json" ^
   -H "x-webhook-secret: DEMO_SECRET_123" ^
   -d "{\"username\": \"test_user\", \"message\": \"Hi, I want to know the price\"}"
+
+
+
+  
 
 Expected behavior:
 
