@@ -7,13 +7,13 @@
         "path": "ig-leads-secure",
         "options": {}
       },
-      "id": "91101ba7-32de-4bca-a225-89cc5cbdb28d",
+      "id": "9be9a867-b41b-47e0-9a5c-54c5fb13e00b",
       "name": "Secure Webhook",
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 1,
       "position": [
-        0,
-        0
+        -480,
+        32
       ],
       "webhookId": "651aba5d-1b46-4e00-9772-d59a7e754aed",
       "retryOnFail": true
@@ -32,13 +32,13 @@
           ]
         }
       },
-      "id": "e9a4c213-f02c-4b9c-b6a7-22aa55d1d388",
+      "id": "f4f55705-eb86-4897-802a-9cfa775e8202",
       "name": "Verify Webhook Secret",
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        208,
-        0
+        -272,
+        32
       ],
       "retryOnFail": true
     },
@@ -59,13 +59,13 @@
         },
         "options": {}
       },
-      "id": "6f5eb1ed-3398-4137-9479-622e7a383a22",
+      "id": "2e84c409-afe8-4f1c-bcf8-8fb01c08489d",
       "name": "Normalize Lead Data",
       "type": "n8n-nodes-base.set",
       "typeVersion": 1,
       "position": [
-        416,
-        -64
+        -64,
+        -32
       ],
       "retryOnFail": true
     },
@@ -80,13 +80,13 @@
           ]
         }
       },
-      "id": "3cadb0df-4470-467b-a5bb-846ebc1e06cd",
+      "id": "4e5a9bc4-b66b-437c-a9a4-96852dae1a45",
       "name": "Validate Lead",
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
       "position": [
-        608,
-        -64
+        128,
+        -32
       ],
       "retryOnFail": true
     },
@@ -109,13 +109,13 @@
         },
         "options": {}
       },
-      "id": "750fe6c9-9c30-41c2-ada4-4e6f6673d890",
+      "id": "b763bdf1-1930-4a91-93db-036b3c505c38",
       "name": "Save Lead (DB API)",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4,
       "position": [
-        800,
-        0
+        320,
+        32
       ],
       "retryOnFail": true
     },
@@ -125,13 +125,13 @@
         "url": "https://webhook.site/6b880026-c28f-4983-b465-c6a84963e1a7",
         "options": {}
       },
-      "id": "a1e1f9f7-4ead-4de1-b99e-4c835e1b4fec",
+      "id": "c4e95f92-c97b-4bbf-a66f-0795fd15e5e0",
       "name": "AI Lead Qualification",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4,
       "position": [
-        1008,
-        0
+        528,
+        32
       ]
     },
     {
@@ -140,13 +140,13 @@
         "text": "📥 Lead جديد\n👤 {{$json.username}}\n🧠 تم تحليله بالذكاء الاصطناعي",
         "additionalFields": {}
       },
-      "id": "665d4452-83bd-4889-8f0a-6a4a1d172f89",
+      "id": "ee382e50-d28d-4d96-83ad-414be00127c6",
       "name": "Notify Sales (Telegram)",
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1,
       "position": [
-        1200,
-        0
+        720,
+        32
       ],
       "webhookId": "3920e465-a880-4c01-8099-28b7194f952b",
       "credentials": {
@@ -231,11 +231,10 @@
     "executionOrder": "v1",
     "availableInMCP": false
   },
-  "versionId": "0c5edb5a-802c-4cda-8450-69a43f294b34",
+  "versionId": "22826abb-b1b8-434b-8269-8a063ad7d79f",
   "meta": {
-    "templateCredsSetupCompleted": true,
     "instanceId": "c8784d17933713f23e6e89969f652118adee231e88d554814bc1bd6cff4d93e2"
   },
-  "id": "paDOtmjWsJe97zWw-8Dpz",
+  "id": "QaBBYhFffkpREZuL63pdF",
   "tags": []
 }
